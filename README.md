@@ -14,41 +14,26 @@ This system is decentralized, meaning no single person or organization controls 
 I used each block in the block chain to keep the transaction data.
 Each block in the block chain contains one transaction.
 
-I used 
+I used SHA-256 algorithm to a string to crate hash values for the blocks,<br> 
+apply the ECDSA Signature and verify a string signature to ensure the data was not tempered with.<br>
 
-## The formula used:<br>
-New Q(s,a) = Q(s,a) + α[R(s,a) + γ max Q'(s',a') - Q(s,a)]<br>where:<br>s = State<br>
-                                                                 a = Action<br>
-                                                                 α(Alpha) = Learning Rate<br>
-                                                                 γ(Gamma) = Discount Rate<br>
-                                                                 Q(s,a) = Current Q-Value<br>
-                                                                 max Q'(s',a') = Maximum expected future reward<br>
-                                                                 R(s,a) = Reward for taking an action at that state<br>
-
-The values used were:<br>Step Size = 0.25<br>
-                      Epsilon = 0.1<br>
-                      γ(Gamma) = 0.95
                                                                   
 ## Installation
 
-Make a clone of all the files in the repository.
+Make a clone of all the files in the repository.<br>
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install following:
+You need to have Java abd JDK installed.
 
-```bash
-pip install matplotlib
-pip install numpy
-pip install pygame
-pip install tqdm
-```
-Make sure you are using the correct version of Python (ideally Python 3).<br>
-Keep all the documents in the same folder; if not, redirect them accordingly.<br>
-Run the main.py file
+You have to add the JAR files in the "libs" file in your java library.<br>
+OR<br>
+if youre using vscode you can drag and drop the libs file in the reference folder under the java project section.
 
 ## Output
 
-After successfully running the code in the terminal, there should be a progress bar.<br>
-After it reaches 100%, a maze map will automatically open in another window and visually show you the best path taken by the agent.
+After successfully running the code, in the terminal there should be a prompt asking how much money you want to transfer to wallet B.<br>
+You can send upto 1000 coins. with Multiple transactions. After you finished all your money the program will end and it will say if the block that you used was valid(Not tampered with).<br>
+
+Demo video: https://www.youtube.com/watch?v=6p6xZo2PXBo
 
 ## Not functioning?
 If you run into difficulties or errors in the code please feel free to reach out.<br>
