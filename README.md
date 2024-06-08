@@ -28,7 +28,7 @@ You have to add the JAR files in the "libs" file in your java library.<br>
 OR<br>
 If you are using vscode you can drag and drop the libs file in the reference folder under the java project section.
 
-After its done next you will have to run the BlockChain.py and wait for the output in terminal
+After it is done next you will have to run the BlockChain.java and wait for the output in the terminal.
 
 ## Output
 
